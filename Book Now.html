@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Book Now - WanderNest</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #970747;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #970747;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #d1457e;
+        }
+
+        footer {
+            text-align: center;
+            padding: 5px;
+            background-color: #970747;
+            color: white;
+            margin-top: 40px;
+            border-radius: 0 0 10px 10px;
+        }
+
+        .footer-links {
+            margin-top: 10px;
+        }
+
+        .footer-links a {
+            display: inline-block;
+            background-color: #ffffff;
+            color: #970747;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .footer-links a:hover {
+            background-color: #d1457e;
+            color: white;
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Book Your Stay</h1>
+    <form id="bookingForm" action="Process Booking.php" method="POST">
+        <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+            <label for="checkin">Check-in Date</label>
+            <input type="date" id="checkin" name="checkin" required>
+        </div>
+        <div class="form-group">
+            <label for="checkout">Check-out Date</label>
+            <input type="date" id="checkout" name="checkout" required>
+        </div>
+        <div class="form-group">
+            <label for="property">Select Property</label>
+            <select id="property" name="property" required>
+                <option value="">-- Select Property --</option>
+                <option value="1">Pristine Hills - Home stay</option>
+                <option value="2">Nature' Lap | FARMCabin Beside Stream</option>
+                <option value="3">Cosy Private Room - In the Heart of Copenhagen</option>
+                <option value="4">Stanza Aragona in Casa delle Api</option>
+                <option value="5">Lakeview PremiumRoom(Private Balcony): Allepey</option>
+                <option value="6">Whispering Waters - Magnolia Cottage</option>
+                <option value="7">Villa I'llot by muse villas</option>
+                <option value="8">Driftwood Hut @ Desa Laguna Resort</option>
+                <option value="9">NEW modern 3 beed retreat in the heart of Camps Bay</option>
+                <option value="10">Beautiful house with private pool</option>
+                <option value="11">Eden | BnB | Boutique Room 1 | View | Breakfast</option>
+                <option value="12">Elegant stay -  Manyata Tec Park</option>
+                <option value="13">villa 814 on east coast road</option>
+                <option value="14">Boutique farm stay at Bangalore</option>
+                <option value="15">Coral-Romantic Glasshouse Suite-The Pause Project</option>
+                <option value="16">Vanandhaara Coorg | Boutique-stay | Homestay 1</option>
+                <option value="17">Unique Bamboo Tiny Cottage House</option>
+                <option value="18">Rustling Nest - Farm Stay for a Cycling Weekend</option>
+                <option value="19">SeaBatical Beach Stay Studio Apt, Kitchen, Balcony</option>
+                <option value="20">Alvin's Beach Villa Premium 4-Bedrooms</option>
+                <option value="21">modern fairytale holiday home</option>
+                <option value="22">Couplespod at Riverstone House Portfolio</option>
+                <option value="23">Anoie home with a private sauna with spectacular views of Lake Nojiri</option>
+                <option value="24">Whispering Pines Cottages| Cabin | Tandi</option>
+                <option value="25">Masaya - Off The Grid- Mansion House in S/Goa</option>
+                <option value="26">Rainbow Villa Shoowa Cape Yamu Luxury Sea View Villa with Bulter Maid Breakfast</option>
+                <option value="27">TripThrill Matthuga - East Bungalow Homestay-7</option>
+                <option value="28">BEDLA HOUSE-large colonial bungalow at city centre</option>
+                <option value="29">View-Topia Treehouse</option>
+                <option value="30">Tree house Usha</option>
+                <option value="31">Gold Mist</option>
+                <option value="32">Estate de Frangipani</option>
+                <option value="33">A-Frame Garden Grove Hideaway</option>
+                <option value="34">Nordic A villa ,private pool</option>
+                <option value="35">8 rooms  @Castle Oodeypore</option>
+                <option value="36">APT Gli sposi - castle with pool</option>
+                <option value="37">PLA2 Srinagarind</option>
+                <option value="38">Luxury Houseboat</option>
+                <option value="39">Zostel Shangarh | Standard Private Room</option>
+                <option value="40">Hill Top Lodge and Restaurant</option>
+            </select>
+        </div>
+        <button type="submit">Confirm Booking</button>
+    </form>
+</div>
+
+<footer>
+    <p>&copy; 2024 WanderNest | All rights reserved.</p>
+    <div class="footer-links">
+        <a href="Home.html">Back to Homepage</a>
+    </div>
+</footer>
+
+<script>
+    // Set the minimum date to tomorrow for check-in and check-out fields
+    document.addEventListener("DOMContentLoaded", function() {
+        const today = new Date();
+
+        // Format today’s date as YYYY-MM-DD
+        const dd = String(today.getDate()).padStart(2, '0');
+        const mm = String(today.getMonth() + 1).padStart(2, '0'); // January is 0!
+        const yyyy = today.getFullYear();
+
+        const minDate = yyyy + '-' + mm + '-' + dd;
+
+        // Set min attribute for check-in and check-out dates to today
+        document.getElementById('checkin').setAttribute('min', minDate);
+        document.getElementById('checkout').setAttribute('min', minDate);
+    });
+    document.getElementById('bookingForm').addEventListener('submit', function(event) {
+        const checkinDate = new Date(document.getElementById('checkin').value);
+        const checkoutDate = new Date(document.getElementById('checkout').value);
+
+        // Validate check-in and check-out dates
+        if (checkoutDate <= checkinDate) {
+            alert("Check-out date must be after the check-in date.");
+            event.preventDefault(); // Prevent form submission
+        }
+    });
+</script>
+
+</body>
+</html>

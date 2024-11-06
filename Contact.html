@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact Us - WanderNest</title>
+      <link rel="stylesheet" href="Stylesheet.css" />
+    <style>
+        a:hover {
+    background-color: lightgoldenrodyellow;
+    color: black;
+    font-size: 18px;
+    font-style: normal;
+}
+        .contact-container {
+            margin: 40px;
+            font-family: Arial, sans-serif;
+        }
+        .contact-header h2 {
+            color: #970747;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .contact-details, .contact-form {
+            margin-top: 30px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .contact-table {
+            border-collapse: collapse;
+            width: 50%;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .contact-table th, .contact-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        .contact-table th {
+            background-color: #970747;
+            color: #ffffff;
+            font-size: 1.3em;
+        }
+        .contact-table td {
+            font-size: 1.1em;
+        }
+        .contact-table a {
+            color: #970747;
+            text-decoration: none;
+        }
+        .contact-table a:hover {
+            text-decoration: underline;
+        }
+        .contact-table tr:hover {
+            background-color: #f1f1f1;
+        }
+        .contact-table tr:hover 
+        {
+         background-color: transparent; /* Change to your desired hover color */
+        }
+        .form-container {
+            width: 45%;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        form input[type="text"], form input[type="email"], form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        form textarea {
+            resize: vertical;
+        }
+        form input[type="submit"] {
+            background-color: #970747;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            border: 2px solid transparent; 
+            font-size: 1.1em;
+        }
+        form input[type="submit"]:hover {
+            background-color: #d1457e;
+        }
+        .social-media {
+            margin-top: 40px;
+        }
+        .social-media h3 {
+            color: #970747;
+            font-size: 1.6em;
+        }
+        .social-media ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .social-media ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        .social-media ul li a {
+            color: #970747;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+        .social-media ul li a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="Logo.png" alt="WanderNest Logo">
+        <h1>WanderNest</h1>
+        <div class="nav">
+            <a href="Home.html">Home</a>
+            <a href="Properties.html">Properties</a>
+            <a href="About.html">About Us</a>
+            <a href="Contact.html">Contact Us</a>
+        </div>
+    </div>
+    <div class="contact-container">
+        <div class="contact-header">
+            <h1 style="color: #970747"><center>Contact WanderNest</center></h1>
+            <p>We'd love to hear from you! Whether you have a question, feedback, or need assistance, feel free to reach out.</p>
+        </div>
+
+        <div class="contact-details">
+            <!-- Contact Information Table -->
+            <table class="contact-table">
+                <tr>
+                    <th>Department</th>
+                    <th>Contact</th>
+                </tr>
+                <tr>
+                    <td>Customer Support</td>
+                    <td><a href="mailto:support@wandernest.com">support@wandernest.com</a></td>
+                </tr>
+                <tr>
+                    <td>Booking Inquiries</td>
+                    <td><a href="mailto:bookings@wandernest.com">bookings@wandernest.com</a></td>
+                </tr>
+                <tr>
+                    <td>Partnerships</td>
+                    <td><a href="mailto:partners@wandernest.com">partners@wandernest.com</a></td>
+                </tr>
+                <tr>
+                    <td>Phone</td>
+                    <td><a href="tel:+91 9876543210">+91 9876543210</a></td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td>10-122/B, High Hill Layout, 5th Cross, Malleshwaram</td>
+                </tr>
+            </table>
+
+            <!-- Contact Form -->
+            <div class="form-container">
+                <form action="Submit Feedback.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required placeholder="Your Name">
+                
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="Your Email">
+                
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="6" required placeholder="How can we help you?"></textarea>
+                
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+
+        <!-- Additional Contact Information -->
+        <div class="social-media">
+            <h3>Connect with us on Social Media</h3>
+            <p>Follow us for updates, offers, and more:</p>
+            <ul>
+                <li><a href="https://www.facebook.com/WanderNest" target="_blank"><u>Facebook</u></a></li>
+                <li><a href="https://www.instagram.com/WanderNest" target="_blank"><u>Instagram</u></a></li>
+                <li><a href="https://www.twitter.com/Wandernest" target="_blank"><u>Twitter</u></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 WanderNest | All rights reserved.</p>
+        <div class="footer-links">
+            <a href="Home.html">Back to Homepage</a>
+        </div>
+    </footer>
+</body>
+</html>

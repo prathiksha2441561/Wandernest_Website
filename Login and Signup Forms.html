@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - WanderNest</title>
+    <link rel="stylesheet" href="Stylesheet.css" />
+    <style>
+        /* Your existing styles here */
+
+        .auth-section {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .auth-section form {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            background-color: #FBEAEB;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        .auth-section input {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .auth-section button {
+            background-color: #970747;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .auth-section button:hover {
+            background-color: #d1457e;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="Logo.png" alt="WanderNest Logo">
+        <h1>Welcome to WanderNest</h1>
+        <div class="nav">
+            <a href="Home.html">Home</a>
+            <a href="Properties.html">Properties</a>
+            <a href="About.html">About Us</a>
+            <a href="Contact.html">Contact Us</a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="welcome-text">
+            <h2>Find Your Perfect Getaway</h2>
+            <p>At WanderNest, we transform travel into a unique and enriching experience...</p>
+        </div>
+        <img src="Main Picture.png" alt="Main Picture" class="main-image" height="420px" width="700px">
+    </div>
+
+    <!-- Login and Signup Section -->
+    <div class="auth-section">
+        <!-- Login Form -->
+        <form action="login.php" method="POST">
+            <h3>Login</h3>
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+
+        <!-- Signup Form -->
+        <form action="signup.php" method="POST">
+            <h3>Signup</h3>
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Signup</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 WanderNest | All rights reserved.</p>
+    </footer>
+</body>
+</html>
