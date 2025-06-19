@@ -4,14 +4,15 @@ This is a self-built website for exploring and booking properties. Designed as a
 
 Features:
 
--Property Listing  
--Detailed Property Pages  
--Booking Functionality (PHP backend)  
--Responsive Design  
--Modular Structure for Future Enhancements
+- Property Listing  
+- Detailed Property Pages  
+- Booking Functionality (PHP backend)  
+- Responsive Design  
+- Modular Structure for Future Enhancements
 
-Tech Stack
+Tech Stack:
+
 - **Frontend:** HTML5, CSS3, JavaScript  
 - **Backend:** PHP  
-- **Database:** MySQL (if applicable)  
+- **Database:** MySQL
 - **Hosting/Deployment:** Localhost (XAMPP) or Web Hosting  
